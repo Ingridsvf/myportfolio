@@ -6,18 +6,22 @@
 }
     
      /* portada*/
-    .presentacion{
+.presentacion{
          padding: 80px 20px;
     }
     
-.imagen{
-        overflow: visible;
-
-     .cesped img {
+.cesped {
+    overflow: hidden;
+    img {
        width: 600px; 
        height: auto;
     }
+
+   
+
 }
+   
+
 .flores {
     display: flex;
     justify-content: left;
@@ -37,14 +41,14 @@
     img {
         width: 10px;
         position: absolute;
-        top:340px ;
+        top:max 370px ;
     }
 }
 .gato {
     position: absolute;
     z-index: 2;
     right: 50%;
-    top: 295px;
+    top: 330px;
     img{
     width: 150px;
     }
@@ -57,8 +61,8 @@
 
 .frase{
     position: absolute;
-    left: 280px;
-    top: 270px;
+    left: 270px;
+    top: 300px;
     img{
         width: 80px;
     }
@@ -69,7 +73,7 @@
     padding: 50px 20px;
     gap: 100px;
     img {
-        width: 350px;
+        width: 100%;
     }
 }
 
@@ -121,10 +125,20 @@ gap: 30px;
 }
 
 .cesped {
+overflow: visible;
     img {
        width: 692.389px; 
     }
 }
+.derecha{
+position: absolute;
+  right:0 ;}
+    .izquierda{
+        position: absolute;
+        left:0;
+       }
+    .medio {
+        z-index: 1;}
 
 .flores {
     display: flex;

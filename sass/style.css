@@ -93,19 +93,6 @@ header .navbar-brand img {
 .cesped {
   display: flex;
   justify-content: center;
-  overflow: visible;
-}
-.cesped .derecha {
-  position: absolute;
-  right: 0%;
-}
-.cesped .izquierda {
-  left: 0;
-  position: absolute;
-}
-.cesped .medio {
-  position: absolute;
-  z-index: 1;
 }
 
 .gato {
@@ -200,10 +187,10 @@ footer {
   .presentacion {
     padding: 80px 20px;
   }
-  .imagen {
-    overflow: visible;
+  .cesped {
+    overflow: hidden;
   }
-  .imagen .cesped img {
+  .cesped img {
     width: 600px;
     height: auto;
   }
@@ -226,13 +213,13 @@ footer {
   .tallos img {
     width: 10px;
     position: absolute;
-    top: 340px;
+    top: max 370px;
   }
   .gato {
     position: absolute;
     z-index: 2;
     right: 50%;
-    top: 295px;
+    top: 330px;
   }
   .gato img {
     width: 150px;
@@ -243,8 +230,8 @@ footer {
   }
   .frase {
     position: absolute;
-    left: 280px;
-    top: 270px;
+    left: 270px;
+    top: 300px;
   }
   .frase img {
     width: 80px;
@@ -255,7 +242,7 @@ footer {
     gap: 100px;
   }
   .proyectos img {
-    width: 350px;
+    width: 100%;
   }
   /* página- sobre mí*/
   .aboutme {
@@ -292,8 +279,22 @@ footer {
   .aboutme p {
     width: 700px;
   }
+  .cesped {
+    overflow: visible;
+  }
   .cesped img {
     width: 692.389px;
+  }
+  .derecha {
+    position: absolute;
+    right: 0;
+  }
+  .izquierda {
+    position: absolute;
+    left: 0;
+  }
+  .medio {
+    z-index: 1;
   }
   .flores {
     display: flex;

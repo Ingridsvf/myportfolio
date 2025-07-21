@@ -57,21 +57,7 @@
 .cesped {
     display: flex;
     justify-content: center;
-    overflow: visible;
-
-    .derecha {
-        position: absolute;
-        right: 0%;
-    }
-    .izquierda{
-        left: 0;
-        position: absolute;
-    }
-    .medio {
-        position: absolute;
-        z-index: 1;
-    }
-}
+   }
 
 .gato {
     position: relative;
