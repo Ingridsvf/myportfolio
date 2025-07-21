@@ -1,0 +1,403 @@
+@charset "UTF-8";
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(20deg);
+  }
+}
+@keyframes rotate2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+header .navbarcolor {
+  background-color: #F8F6FE;
+}
+header .paginas {
+  justify-content: flex-end;
+}
+header .nav-link {
+  color: #684BBA;
+}
+header .nav-link:hover {
+  color: #9d9d9d;
+}
+header .navbar-brand {
+  color: #684BBA;
+  font-family: "Franklin Gothic";
+  font-weight: 700;
+  font-size: 22px;
+}
+header .navbar-brand:hover {
+  color: #9d9d9d;
+}
+header .navbar-brand img {
+  width: 50px;
+}
+
+/* Portada */
+.portada {
+  background-color: #F8F6FE;
+}
+
+.imagen {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 150px;
+}
+
+.presentacion {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: #684bba;
+}
+
+.flores {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.flores .flor-azul {
+  animation: rotate 4s infinite;
+  z-index: 3;
+}
+.flores .flor-lila {
+  animation: rotate2 2s infinite;
+  z-index: 3;
+}
+.flores .flor-roja {
+  animation: rotate 3s infinite;
+  z-index: 3;
+}
+
+.tallos {
+  display: flex;
+  justify-content: center;
+}
+.tallos img {
+  position: absolute;
+  top: 370px;
+}
+
+.cesped {
+  display: flex;
+  justify-content: center;
+  overflow: visible;
+}
+.cesped .derecha {
+  position: absolute;
+  right: 0%;
+}
+.cesped .izquierda {
+  left: 0;
+  position: absolute;
+}
+.cesped .medio {
+  position: absolute;
+  z-index: 1;
+}
+
+.gato {
+  position: relative;
+  z-index: 2;
+}
+.gato img {
+  position: absolute;
+  width: 200px;
+}
+.gato .cesped-superior-gato {
+  z-index: 3;
+}
+.gato .dormido:hover {
+  opacity: 0%;
+}
+
+/* Proyectos-index*/
+.proyectos {
+  position: static;
+  gap: 100px;
+}
+.proyectos img {
+  border-radius: 12px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #684bba;
+  color: #fff;
+  text-align: center;
+  padding: 100px 40px;
+}
+
+.aboutme {
+  padding: 0% 10%;
+  padding: 100px 0px;
+}
+.aboutme .texto {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.aboutme .texto h3 {
+  color: #684bba;
+}
+.aboutme p {
+  display: flex;
+  color: #585858;
+}
+
+.experiencia {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px 0px;
+}
+.experiencia .lista {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.herramientas .lista {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20%;
+  margin: 0px;
+  padding: 0px;
+}
+.herramientas .lista ul {
+  color: #585858;
+  font-family: arial;
+  line-height: 2;
+}
+.herramientas .portafolio {
+  padding: 50px 0px;
+}
+.herramientas .portafolio img {
+  width: 80px;
+  padding: 10px;
+}
+
+@media (min-width: 300px) {
+  .name {
+    display: none;
+  }
+  /* portada*/
+  .presentacion {
+    padding: 80px 20px;
+  }
+  .imagen {
+    overflow: visible;
+  }
+  .imagen .cesped img {
+    width: 600px;
+    height: auto;
+  }
+  .flores {
+    display: flex;
+    justify-content: left;
+    position: relative;
+    gap: 20px;
+    bottom: 20px;
+  }
+  .flores img {
+    width: 40px;
+  }
+  .tallos {
+    display: flex;
+    justify-content: left;
+    gap: 60px;
+    padding-left: 12px;
+  }
+  .tallos img {
+    width: 10px;
+    position: absolute;
+    top: 340px;
+  }
+  .gato {
+    position: absolute;
+    z-index: 2;
+    right: 50%;
+    top: 295px;
+  }
+  .gato img {
+    width: 150px;
+  }
+  .gato .cesped-superior-gato {
+    top: 90px;
+    z-index: 3;
+  }
+  .frase {
+    position: absolute;
+    left: 280px;
+    top: 270px;
+  }
+  .frase img {
+    width: 80px;
+  }
+  /* Proyectos */
+  .proyectos {
+    padding: 50px 20px;
+    gap: 100px;
+  }
+  .proyectos img {
+    width: 350px;
+  }
+  /* página- sobre mí*/
+  .aboutme {
+    padding: 20px 20px;
+  }
+  .aboutme p {
+    width: 100%;
+    text-align: justify left;
+  }
+  /*Página-contacto*/
+  .contenedor {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px 0px;
+    gap: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .contenedor-logo {
+    display: flex;
+  }
+  .contenedor-logo .name {
+    display: inline;
+  }
+  /* portada*/
+  .presentacion {
+    padding: 100px;
+  }
+  .aboutme {
+    padding: 100px 100px;
+    gap: 50px;
+  }
+  .aboutme p {
+    width: 700px;
+  }
+  .cesped img {
+    width: 692.389px;
+  }
+  .flores {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    gap: 45px;
+  }
+  .flores img {
+    width: 60px;
+  }
+  .tallos {
+    justify-content: center;
+    gap: 100px;
+    padding-left: 0;
+  }
+  .tallos img {
+    width: 12px;
+    position: absolute;
+    top: 350px;
+  }
+  .gato {
+    position: absolute;
+    z-index: 2;
+    right: 28%;
+    top: 290px;
+  }
+  .gato img {
+    position: absolute;
+    width: 200px;
+  }
+  .gato .cesped-superior-gato {
+    top: 120px;
+    z-index: 3;
+  }
+  .frase {
+    position: absolute;
+    left: 80%;
+    top: 260px;
+  }
+  .frase img {
+    width: 30%;
+  }
+  /* Proyectos */
+  .proyectos {
+    padding: 100px 200px;
+    gap: 100px;
+  }
+  .proyectos img {
+    width: 870px;
+  }
+  /*Página-contacto*/
+  .contenedor {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 100px 0px;
+    gap: 30px;
+  }
+}
+.contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px 100px;
+}
+.contacto h1 {
+  color: #684BBA;
+}
+
+.info {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-style: solid;
+  border-color: #684BBA;
+  box-shadow: 1px 2px 10px 3px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 12px;
+}
+.info h5 {
+  color: #684BBA;
+  font-weight: 700;
+}
+.info img {
+  width: 30%;
+  padding: 10px;
+}
+
+h6 {
+  font-family: arial;
+}
+
+h5 {
+  font-family: arial;
+}
+
+h4 {
+  font-family: arial;
+}
+
+p {
+  font-family: arial;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,195 @@
+
+
+@media (min-width: 300px) {
+.name{
+    display: none;
+}
+    
+     /* portada*/
+    .presentacion{
+         padding: 80px 20px;
+    }
+    
+.imagen{
+        overflow: visible;
+
+     .cesped img {
+       width: 600px; 
+       height: auto;
+    }
+}
+.flores {
+    display: flex;
+    justify-content: left;
+    position: relative;
+    gap: 20px;
+    bottom: 20px;
+         img{
+        width: 40px;}
+}
+
+
+.tallos {
+    display: flex;
+    justify-content: left;
+    gap: 60px;
+    padding-left: 12px;
+    img {
+        width: 10px;
+        position: absolute;
+        top:340px ;
+    }
+}
+.gato {
+    position: absolute;
+    z-index: 2;
+    right: 50%;
+    top: 295px;
+    img{
+    width: 150px;
+    }
+
+    .cesped-superior-gato {
+        top: 90px;
+        z-index: 3;
+    }
+}
+
+.frase{
+    position: absolute;
+    left: 280px;
+    top: 270px;
+    img{
+        width: 80px;
+    }
+}
+
+/* Proyectos */
+.proyectos{
+    padding: 50px 20px;
+    gap: 100px;
+    img {
+        width: 350px;
+    }
+}
+
+
+
+/* página- sobre mí*/
+    .aboutme{
+    padding: 20px 20px;
+
+p{
+    width: 100%;
+    text-align: justify left;
+}
+}
+
+
+/*Página-contacto*/
+.contenedor {
+display: flex;
+justify-content: center;
+flex-direction: column;
+padding: 100px 0px;
+gap: 30px;
+}
+}
+
+
+
+
+
+@media (min-width: 1024px) {
+.contenedor-logo{
+    display: flex;
+    .name{
+    display: inline;
+}
+}
+
+     /* portada*/
+    .presentacion{
+         padding: 100px;
+    }
+ .aboutme{
+    padding: 100px 100px;
+    gap: 50px;
+    p{
+    width: 700px;
+}
+}
+
+.cesped {
+    img {
+       width: 692.389px; 
+    }
+}
+
+.flores {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    gap: 45px;
+     img{
+        width: 60px;}
+}
+
+.tallos {
+    justify-content: center;
+    gap: 100px;
+    padding-left: 0;
+    img {
+        width: 12px;
+        position: absolute;
+        top:350px ;
+    }
+}
+
+
+
+.gato {
+    position: absolute;
+    z-index: 2;
+    right: 28%;
+    top: 290px;
+    img{
+    position: absolute;
+    width: 200px;
+    }
+
+    .cesped-superior-gato {
+        top: 120px;
+        z-index: 3;
+    }
+}
+
+.frase{
+    position: absolute;
+    left: 80%;
+    top: 260px;
+    img{
+        width: 30%;
+    }
+}
+
+/* Proyectos */
+.proyectos{
+    padding: 100px 200px;
+    gap: 100px;
+    img {
+        width: 870px;
+    }
+}
+
+/*Página-contacto*/
+.contenedor {
+display: flex;
+justify-content: center;
+flex-direction: row;
+padding: 100px 0px;
+gap: 30px;
+}
+
+
+}

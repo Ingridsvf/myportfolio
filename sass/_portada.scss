@@ -1,0 +1,105 @@
+
+
+/* Portada */
+.portada{
+    background-color: #F8F6FE;
+}
+
+
+.imagen {
+    display: flex;
+    flex-direction: column;
+   flex-wrap: nowrap;
+   height: 150px;
+}
+.presentacion {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #684bba
+}
+
+
+
+.flores {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    .flor-azul {
+        animation: rotate 4s infinite;
+        z-index: 3;
+    }
+    .flor-lila {
+        animation: rotate2 2s infinite;
+        z-index: 3;
+    }
+    .flor-roja{
+        animation: rotate 3s infinite;
+        z-index: 3;
+    }
+}
+
+
+
+.tallos {
+    display: flex;
+    justify-content: center;
+    img {
+
+        position: absolute;
+        top:370px ;
+    }
+}
+
+
+.cesped {
+    display: flex;
+    justify-content: center;
+    overflow: visible;
+
+    .derecha {
+        position: absolute;
+        right: 0%;
+    }
+    .izquierda{
+        left: 0;
+        position: absolute;
+    }
+    .medio {
+        position: absolute;
+        z-index: 1;
+    }
+}
+
+.gato {
+    position: relative;
+    z-index: 2;
+
+    img{
+    position: absolute;
+    width: 200px;
+    }
+
+    .cesped-superior-gato {
+
+        z-index: 3;
+    }
+    
+    .dormido:hover {
+        opacity: 0%;
+    }
+}
+
+
+/* Proyectos-index*/
+
+.proyectos{
+    position: static;
+
+    gap: 100px;
+    img {
+        border-radius: 12px;
+    }
+}

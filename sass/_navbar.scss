@@ -1,0 +1,28 @@
+
+
+header {
+.navbarcolor{
+    background-color: #F8F6FE;
+}
+    .paginas {
+        justify-content:flex-end
+    }
+.nav-link {
+        color: #684BBA;
+        &:hover{
+            color: #9d9d9d;
+        }
+    }
+    .navbar-brand{
+        color:#684BBA;
+        font-family:'Franklin Gothic';
+        font-weight: 700;
+        font-size: 22px;
+        &:hover{
+            color: #9d9d9d;
+        }
+        img{
+            width: 50px;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+
+.aboutme{
+    padding: 0% 10%;
+    padding: 100px 0px;
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    h3{
+        color: #684bba;
+}
+}
+p{
+    display: flex;
+    color: #585858;
+}
+}
+
+.experiencia{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 0px;
+    .lista{
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+        margin: 0px;
+        padding: 0px;
+    }
+}
+.herramientas{
+     .lista{
+        display: flex;
+        justify-content: flex-start;
+        gap: 20%;
+        margin: 0px;
+        padding: 0px;
+        ul{
+        color: #585858;
+        font-family: arial;
+        line-height: 2;
+     }
+    }
+
+.portafolio{
+    padding: 50px 0px;
+    img{
+        width: 80px;
+        padding: 10px;
+    }
+
+    }
+}
