@@ -118,6 +118,13 @@ header .navbar-brand img {
 .proyectos img {
   border-radius: 12px;
 }
+.proyectos h5 {
+  font-weight: bold;
+}
+
+.proyecto-imagen:hover {
+  transform: scale(1.05);
+}
 
 footer {
   display: flex;

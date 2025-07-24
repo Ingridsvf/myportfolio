@@ -83,9 +83,15 @@
 
 .proyectos{
     position: static;
-
     gap: 100px;
     img {
         border-radius: 12px;
     }
+    h5{
+        font-weight: bold;
+    }
+}
+
+.proyecto-imagen:hover{
+    transform: scale(1.05);
 }
