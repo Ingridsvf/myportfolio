@@ -83,7 +83,8 @@
 
 .proyectos{
     position: static;
-    gap: 100px;
+    display: flex;
+    flex-direction: column;
     img {
         border-radius: 12px;
     }

@@ -113,7 +113,8 @@ header .navbar-brand img {
 /* Proyectos-index*/
 .proyectos {
   position: static;
-  gap: 100px;
+  display: flex;
+  flex-direction: column;
 }
 .proyectos img {
   border-radius: 12px;
